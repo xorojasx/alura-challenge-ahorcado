@@ -1,0 +1,271 @@
+@font-face {
+    font-family: west;
+    src: url("../fnt/WEST____.TTF") format("opentype");
+}
+
+body{
+    align-content: center;
+    align-items: center;
+    background-color:rgba(180, 218, 240, 0.521);
+    display: flex;
+    flex-direction: column;   
+}
+#content{
+    /*background: url("../img/fondo02.jpg") no-repeat;*/
+    background-size: 100%;
+    margin: 0 auto;
+    width:90%;
+}
+#header{
+    display:flex;
+    flex-direction:row;
+    height:5em;
+    width: 100%;
+}
+.logo{
+    width:20%;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.tablero{
+    display: flex;
+    flex-direction: row;
+    font-family: 'west';
+    font-size: 1.5vw;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+#cant-letras{
+    margin: 0 auto;
+    padding: auto;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    font-family: 'west';
+    font-size: 1.5vw;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1;
+    margin: 0 1em;
+    /*padding: 1.2em 1.8em;*/
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'west', sans-serif;
+}
+  .botones:hover, .botones:focus {
+    color: rgb(180, 167, 167);
+    outline: 0;
+  }
+  
+  .first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #ee2e19 inset;
+  }
+
+  .third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+.juego{
+    align-items: center;
+    background: url("../img/azul03.png");
+    background-size: 100%;
+    width:100%;
+}
+.juego div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'west';
+    margin: 0 auto;
+}
+.juego div h2{
+    color: rgb(207, 4, 4);
+    font-size: 3.5vw;
+    margin-top: 0.1em;
+    text-align: center;
+}
+
+.juego div h4{
+    color: rgb(51, 9, 240);
+    font-size: 3vw;
+    margin-top: 0.1em;
+    text-align: center;
+}
+.juego div li{
+    font-size: 2vw;
+    list-style: none;
+    margin-top: 0.1em;
+    text-decoration: none;
+}
+.middle{
+    margin: 0 auto;
+    position:relative;
+}
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+   -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+  
+.first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+.first:hover {
+    box-shadow: 0 0 40px 40px #df3f18 inset;
+}
+.fourth {
+    border-color: #f1c40f;
+    color: rgb(27, 20, 136);
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+    background-position: 0;
+}
+#btnStart {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+#btnStart::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+#btnStart:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+#btnStart:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+#btnStart::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+#btnStart:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+@keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  
+#fondo{
+    box-shadow: 0px 20px 20px 20px rgb(1, 1, 2);
+    margin-top: 2em;
+    width: 100%;
+}
+#fondo:hover{
+    box-shadow: 0px 20px 20px 20px rgb(177, 196, 13);
+}
+#guiones{
+  font-family: 'west';
+  font-size: 5em;
+  margin-top: 2rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Onde - Challenge 02</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <div class="logo">
+                <img id="logo" src="./public/img/logo.png" alt="">
+            </div>
+            <div id="tablero" class="tablero">
+                <div id="letras">
+                    <label for="letras">Letras</label>
+                    <input id="lerasIngresadas" name="letras" type="text"  disabled/>
+                </div>
+                <div id="cant-intentos">
+                    <label for="cnt-intentos">Cant. Intentos</label>
+                    <input id="cnt-intentos" name="cnt-intentos" type="text"  disabled/>
+                </div>
+                <div id="letras">
+                    <label for="ing-letras">Ing. 1 Letra:</label>
+                    <input id="ing-letras" name="ing-letras" type="text"  />
+                </div>
+            </div>
+            <div id="botones" class="botones">
+                <button id="first" class="btn first">Resetear</button>
+                <button id="fourth" class="btn fourth">Cancelar</button>
+              </div>
+        </div>
+        <div class="juego">
+            <div id="juego">
+                <p><h2>Éste es el clásico juego de "El ahorcado".</h2>
+                <h4>Si no conoces las reglas, te las explico brevemente:</h4>
+                <p><ul>
+                    <li>Se selecciona una palabra al azar</li>
+                    <li>En el recuadro de texto, ingresas una letra</li>
+                    <li>Si la letra se encuentra en la palabra secreta, se dibujará en la posición que corresponda</li>
+                    <li>Tendrás cierta cantidad de intentos</li>
+                    <li>Si no aciertas la letra, se dibujará una parte de la horca</li>
+                    <li>El juego termina si adivinas la palabra, o si te quemas en la horca</li>
+                </ul></p>
+            </div>
+            <div class="middle">
+                <button id="btnStart" class="btnIni btnIni1">Iniciar</button>
+            </div>
+            <div id="guiones"> 
+            </div>
+        </div>
+    </div>
+    <script src="./public/jsc/index.js"></script>
+</body>
+</html>
